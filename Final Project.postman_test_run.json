@@ -1,0 +1,3259 @@
+{
+	"id": "aa2ddfd0-b082-4960-b865-c3337ff6e1a6",
+	"name": "Final Project",
+	"allTests": [],
+	"timestamp": "2017-06-09T22:00:21.103Z",
+	"collection_id": "2c650f21-92b2-b6ea-bfaa-daa5e659305e",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "1957a588-e478-d9e7-8b3e-7fe7930baed2",
+	"data": [],
+	"delay": "100",
+	"count": 1,
+	"collection": {
+		"id": "2c650f21-92b2-b6ea-bfaa-daa5e659305e",
+		"name": "Final Project",
+		"description": "",
+		"order": [
+			"8f4eb331-e763-a814-b9db-8e1366264016",
+			"963a4e81-064e-e151-24ee-fbb8d0794533",
+			"5de4252b-a50e-51eb-4394-0d533b2a7b64",
+			"0b4be34c-0e8e-9fea-78f3-5b1970238c6c",
+			"f8acea90-60f2-8b0e-8fae-2a324f1d6ace",
+			"74402f7e-c92a-f274-57ad-a9e17d918b16",
+			"650964a3-5931-fddb-b2b2-d2e74f41485f",
+			"f3f7612a-338b-a382-527f-52070ab24348",
+			"8513b732-c274-0e9d-baf1-12a6bc242fa1",
+			"cdb8637e-3d47-2ac4-7295-9ebaae42c153",
+			"b27cae9c-c0f7-3f10-c987-4b7bebe0dddf",
+			"177a5a34-94a3-1f01-3673-9225e7b71686",
+			"facd854a-0925-66d7-f593-4972d1453648",
+			"44c3d10a-5da6-4e10-c49e-6ccab66ca040",
+			"5481c3e9-151b-06b5-06b6-f10c392866b8",
+			"6da06d6f-0f1d-a6e3-74f0-7dfc43ec9ccf",
+			"eefc1de7-93b5-23a5-63c9-e7a5f426056e",
+			"197561f3-12a7-8080-3ec4-6a5b3b639325",
+			"199bd040-e428-7bb5-0d2e-fce08454a58c",
+			"98945839-0f46-6346-6aa2-4352edf90efa",
+			"4d896c75-8a8b-2007-0dc3-6296ae40e9a4",
+			"fc20f026-6df7-c555-933a-0c111bc87eb5",
+			"e316637e-3e72-1b79-34fa-4bbf4ebfcc06",
+			"6167a9f9-41c1-8db5-094a-156f7a0db7df",
+			"872001d3-44ff-ecfc-784a-09f951b9b971",
+			"2c604c8f-4679-ab28-3dbd-1e6d0846c358",
+			"40fc4117-766e-1547-cf77-bbf2321ec341",
+			"2e78f1bf-b845-2e6f-1181-3f863c17a130",
+			"6a73b65b-c26e-6671-902e-08fe63c16deb",
+			"938abf57-cfb0-e61b-bf86-257b40a237c5",
+			"26137f5b-8782-9996-c7c1-4ef30bc17aaa",
+			"04ec58d6-0b5a-3ec3-b9a1-7d4b7325b953",
+			"7f0633af-f0b8-4921-3ce3-69646c53eec7",
+			"673277d2-57dd-7327-e5ca-9e9400fae7a1",
+			"79dbafa6-3ae3-2421-4fd5-1f2b2d90410d",
+			"28abbf1a-2de3-1de0-7580-78e150e55f14",
+			"162447f7-83eb-19d4-f612-b0de2a78cee6",
+			"6ec62236-de61-6273-8810-880899f833c1",
+			"6837b37b-58eb-29bd-89b6-1195d13da60a",
+			"2d82c2c5-f881-92d7-8837-212c535b7532",
+			"3d09066e-cd4c-081c-211b-462ec7f35079",
+			"541556c1-a24d-dc08-20ed-b31949322f29",
+			"a56058a2-985c-ba34-33a6-e220b7889555",
+			"c22eea99-03f0-1720-2038-7bec4a2cb11d",
+			"4a947908-3b55-3d55-37bd-ff25694576f9",
+			"c0b020d4-08be-c897-e302-e3cef1f5ac64",
+			"ddba3c68-dfd1-945d-7fcd-ee0438782ef0",
+			"b096e312-0f8d-09b0-3e46-ae2384c43f27",
+			"a29c0ba7-15af-212b-34f2-99d6704a7c57"
+		],
+		"folders": [],
+		"timestamp": 1496464563806,
+		"synced": false,
+		"remote_id": 0,
+		"owner": 0,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1496471452374,
+		"updatedAt": 1497044606450,
+		"write": true,
+		"published": false,
+		"favorite": true,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Seed users",
+			"id": "8f4eb331-e763-a814-b9db-8e1366264016",
+			"url": "localhost:8080/seedUsers",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns more than one record": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"827"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns more than one record": true
+				}
+			],
+			"time": "827",
+			"totalRequestTime": "827",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get all users",
+			"id": "963a4e81-064e-e151-24ee-fbb8d0794533",
+			"url": "localhost:8080/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns more than one record": true,
+				"Google+ id is not displayed": true,
+				"Email is not displayed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Google+ id is not displayed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is not displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"86"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns more than one record": true,
+					"Google+ id is not displayed": true,
+					"Email is not displayed": true
+				}
+			],
+			"time": "86",
+			"totalRequestTime": "86",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get single user",
+			"id": "5de4252b-a50e-51eb-4394-0d533b2a7b64",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Google+ id is not displayed": true,
+				"Email is not displayed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Google+ id is not displayed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is not displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"75"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Google+ id is not displayed": true,
+					"Email is not displayed": true
+				}
+			],
+			"time": "75",
+			"totalRequestTime": "75",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get single invalid user",
+			"id": "0b4be34c-0e8e-9fea-78f3-5b1970238c6c",
+			"url": "localhost:8080/users/asdf",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"19"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "19",
+			"totalRequestTime": "19",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get single user (self) shows Google info",
+			"id": "f8acea90-60f2-8b0e-8fae-2a324f1d6ace",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Google+ id is displayed": true,
+				"Email is displayed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Google+ id is displayed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"559"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Google+ id is displayed": true,
+					"Email is displayed": true
+				}
+			],
+			"time": "559",
+			"totalRequestTime": "559",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get single user (someone else) doesnt shows email",
+			"id": "74402f7e-c92a-f274-57ad-a9e17d918b16",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Email is not displayed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is not displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"329"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Email is not displayed": true
+				}
+			],
+			"time": "329",
+			"totalRequestTime": "329",
+			"iterationResults": {}
+		},
+		{
+			"name": "Non-admins cannot create users",
+			"id": "650964a3-5931-fddb-b2b2-d2e74f41485f",
+			"url": "localhost:8080/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"27"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "27",
+			"totalRequestTime": "27",
+			"iterationResults": {}
+		},
+		{
+			"name": "Trying to create a user without valid request body",
+			"id": "f3f7612a-338b-a382-527f-52070ab24348",
+			"url": "localhost:8080/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"517"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "517",
+			"totalRequestTime": "517",
+			"iterationResults": {}
+		},
+		{
+			"name": "Creating a user",
+			"id": "8513b732-c274-0e9d-baf1-12a6bc242fa1",
+			"url": "localhost:8080/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"isAdmin is false by default": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isAdmin is false by default": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"450"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"isAdmin is false by default": true
+				}
+			],
+			"time": "450",
+			"totalRequestTime": "450",
+			"iterationResults": {}
+		},
+		{
+			"name": "User cannot edit someone else's data",
+			"id": "cdb8637e-3d47-2ac4-7295-9ebaae42c153",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCQw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1396"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "1396",
+			"totalRequestTime": "1396",
+			"iterationResults": {}
+		},
+		{
+			"name": "Admin can edit someone else's data",
+			"id": "b27cae9c-c0f7-3f10-c987-4b7bebe0dddf",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"562"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "562",
+			"totalRequestTime": "562",
+			"iterationResults": {}
+		},
+		{
+			"name": "User properties are updated",
+			"id": "177a5a34-94a3-1f01-3673-9225e7b71686",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"isAdmin is false by default": true
+			},
+			"testPassFailCounts": {
+				"isAdmin is false by default": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"60"
+			],
+			"allTests": [
+				{
+					"isAdmin is false by default": true
+				}
+			],
+			"time": "60",
+			"totalRequestTime": "60",
+			"iterationResults": {}
+		},
+		{
+			"name": "Values pre-user update",
+			"id": "facd854a-0925-66d7-f593-4972d1453648",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"40"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "40",
+			"totalRequestTime": "40",
+			"iterationResults": {}
+		},
+		{
+			"name": "User edits hair color",
+			"id": "44c3d10a-5da6-4e10-c49e-6ccab66ca040",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"469"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "469",
+			"totalRequestTime": "469",
+			"iterationResults": {}
+		},
+		{
+			"name": "Hair color is correct",
+			"id": "5481c3e9-151b-06b5-06b6-f10c392866b8",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Hair color has changed": true
+			},
+			"testPassFailCounts": {
+				"Hair color has changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"52"
+			],
+			"allTests": [
+				{
+					"Hair color has changed": true
+				}
+			],
+			"time": "52",
+			"totalRequestTime": "52",
+			"iterationResults": {}
+		},
+		{
+			"name": "User edits age",
+			"id": "6da06d6f-0f1d-a6e3-74f0-7dfc43ec9ccf",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"423"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "423",
+			"totalRequestTime": "423",
+			"iterationResults": {}
+		},
+		{
+			"name": "Age is correct",
+			"id": "eefc1de7-93b5-23a5-63c9-e7a5f426056e",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Age has changed": true
+			},
+			"testPassFailCounts": {
+				"Age has changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"87"
+			],
+			"allTests": [
+				{
+					"Age has changed": true
+				}
+			],
+			"time": "87",
+			"totalRequestTime": "87",
+			"iterationResults": {}
+		},
+		{
+			"name": "User cannot edit isAdmin property",
+			"id": "197561f3-12a7-8080-3ec4-6a5b3b639325",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1029"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "1029",
+			"totalRequestTime": "1029",
+			"iterationResults": {}
+		},
+		{
+			"name": "IsAdmin property did not change",
+			"id": "199bd040-e428-7bb5-0d2e-fce08454a58c",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"IsAdmin has not changed": true
+			},
+			"testPassFailCounts": {
+				"IsAdmin has not changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"66"
+			],
+			"allTests": [
+				{
+					"IsAdmin has not changed": true
+				}
+			],
+			"time": "66",
+			"totalRequestTime": "66",
+			"iterationResults": {}
+		},
+		{
+			"name": "Non admin cannot delete a user",
+			"id": "98945839-0f46-6346-6aa2-4352edf90efa",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"253"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "253",
+			"totalRequestTime": "253",
+			"iterationResults": {}
+		},
+		{
+			"name": "Admin can delete a user",
+			"id": "4d896c75-8a8b-2007-0dc3-6296ae40e9a4",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"250"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "250",
+			"totalRequestTime": "250",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot delete a fake user ID",
+			"id": "fc20f026-6df7-c555-933a-0c111bc87eb5",
+			"url": "localhost:8080/users/asdfasdf",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"222"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "222",
+			"totalRequestTime": "222",
+			"iterationResults": {}
+		},
+		{
+			"name": "Seed houses",
+			"id": "e316637e-3e72-1b79-34fa-4bbf4ebfcc06",
+			"url": "localhost:8080/seedHouses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns more than one record": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"103"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns more than one record": true
+				}
+			],
+			"time": "103",
+			"totalRequestTime": "103",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get all houses",
+			"id": "6167a9f9-41c1-8db5-094a-156f7a0db7df",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns more than one record": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"142"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns more than one record": true
+				}
+			],
+			"time": "142",
+			"totalRequestTime": "142",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get all my houses",
+			"id": "872001d3-44ff-ecfc-784a-09f951b9b971",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns one record": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"262"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns one record": true
+				}
+			],
+			"time": "262",
+			"totalRequestTime": "262",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get all my houses with invalid token",
+			"id": "2c604c8f-4679-ab28-3dbd-1e6d0846c358",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"142"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "142",
+			"totalRequestTime": "142",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single house",
+			"id": "40fc4117-766e-1547-cf77-bbf2321ec341",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns one record": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"68"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns one record": true
+				}
+			],
+			"time": "68",
+			"totalRequestTime": "68",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get a single house (invalid)",
+			"id": "2e78f1bf-b845-2e6f-1181-3f863c17a130",
+			"url": "localhost:8080/houses/badId",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"11"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "11",
+			"totalRequestTime": "11",
+			"iterationResults": {}
+		},
+		{
+			"name": "Tracking a house",
+			"id": "6a73b65b-c26e-6671-902e-08fe63c16deb",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns a record": true,
+				"Tracked by is automatically set to this user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns a record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tracked by is automatically set to this user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"247"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns a record": true,
+					"Tracked by is automatically set to this user": true
+				}
+			],
+			"time": "247",
+			"totalRequestTime": "247",
+			"iterationResults": {}
+		},
+		{
+			"name": "Tracking a house that is already being tracked",
+			"id": "938abf57-cfb0-e61b-bf86-257b40a237c5",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"215"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "215",
+			"totalRequestTime": "215",
+			"iterationResults": {}
+		},
+		{
+			"name": "Tracking a house with invalid token",
+			"id": "26137f5b-8782-9996-c7c1-4ef30bc17aaa",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2101"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "2101",
+			"totalRequestTime": "2101",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot modify house without a token",
+			"id": "04ec58d6-0b5a-3ec3-b9a1-7d4b7325b953",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"31"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "31",
+			"totalRequestTime": "31",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot modify house unless it is tracked by me",
+			"id": "7f0633af-f0b8-4921-3ce3-69646c53eec7",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"257"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "257",
+			"totalRequestTime": "257",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot modify house with an invalid token",
+			"id": "673277d2-57dd-7327-e5ca-9e9400fae7a1",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"152"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "152",
+			"totalRequestTime": "152",
+			"iterationResults": {}
+		},
+		{
+			"name": "Modify a house",
+			"id": "79dbafa6-3ae3-2421-4fd5-1f2b2d90410d",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"223"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "223",
+			"totalRequestTime": "223",
+			"iterationResults": {}
+		},
+		{
+			"name": "House is updated",
+			"id": "28abbf1a-2de3-1de0-7580-78e150e55f14",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Price has updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Price has updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"31"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Price has updated": true
+				}
+			],
+			"time": "31",
+			"totalRequestTime": "31",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot replace a house that I am not tracking",
+			"id": "162447f7-83eb-19d4-f612-b0de2a78cee6",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"235"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "235",
+			"totalRequestTime": "235",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot replace a house with invalid token",
+			"id": "6ec62236-de61-6273-8810-880899f833c1",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"153"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "153",
+			"totalRequestTime": "153",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot replace a house with existing address and zip",
+			"id": "6837b37b-58eb-29bd-89b6-1195d13da60a",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"244"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "244",
+			"totalRequestTime": "244",
+			"iterationResults": {}
+		},
+		{
+			"name": "Replacing a house",
+			"id": "2d82c2c5-f881-92d7-8837-212c535b7532",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns a record": true,
+				"Id has changed": true,
+				"Tracked by is automatically set to this user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns a record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id has changed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tracked by is automatically set to this user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"257"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns a record": true,
+					"Id has changed": true,
+					"Tracked by is automatically set to this user": true
+				}
+			],
+			"time": "257",
+			"totalRequestTime": "257",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot un-track house without a token",
+			"id": "3d09066e-cd4c-081c-211b-462ec7f35079",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"32"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "32",
+			"totalRequestTime": "32",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot un-track house with invalid token",
+			"id": "541556c1-a24d-dc08-20ed-b31949322f29",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"328"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "328",
+			"totalRequestTime": "328",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot un-track house that isn't mine",
+			"id": "a56058a2-985c-ba34-33a6-e220b7889555",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"223"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "223",
+			"totalRequestTime": "223",
+			"iterationResults": {}
+		},
+		{
+			"name": "Cannot un-track house with invalid house ID",
+			"id": "c22eea99-03f0-1720-2038-7bec4a2cb11d",
+			"url": "localhost:8080/houses/asdf",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"14"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "14",
+			"totalRequestTime": "14",
+			"iterationResults": {}
+		},
+		{
+			"name": "Untracking a house",
+			"id": "4a947908-3b55-3d55-37bd-ff25694576f9",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID0ngoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"285"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "285",
+			"totalRequestTime": "285",
+			"iterationResults": {}
+		},
+		{
+			"name": "Admin can un-track a non-admin's tracked house",
+			"id": "c0b020d4-08be-c897-e302-e3cef1f5ac64",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07gkM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"466"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "466",
+			"totalRequestTime": "466",
+			"iterationResults": {}
+		},
+		{
+			"name": "Track another house",
+			"id": "ddba3c68-dfd1-945d-7fcd-ee0438782ef0",
+			"url": "localhost:8080/houses",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns a record": true,
+				"Tracked by is automatically set to this user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns a record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tracked by is automatically set to this user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"254"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns a record": true,
+					"Tracked by is automatically set to this user": true
+				}
+			],
+			"time": "254",
+			"totalRequestTime": "254",
+			"iterationResults": {}
+		},
+		{
+			"name": "Checking forecast",
+			"id": "b096e312-0f8d-09b0-3e46-ae2384c43f27",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID0ngkM/forecast",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Has Content-Type": true,
+				"Content-Type is application/json": true,
+				"Returns something": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns something": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"456"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Has Content-Type": true,
+					"Content-Type is application/json": true,
+					"Returns something": true
+				}
+			],
+			"time": "456",
+			"totalRequestTime": "456",
+			"iterationResults": {}
+		},
+		{
+			"name": "Checking forecast for invalid ID",
+			"id": "a29c0ba7-15af-212b-34f2-99d6704a7c57",
+			"url": "localhost:8080/houses/invalidId/forecast",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"12"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "12",
+			"totalRequestTime": "12",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 101,
+	"totalFail": 0,
+	"totalTime": 14742,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Seed users",
+			"id": "8f4eb331-e763-a814-b9db-8e1366264016",
+			"url": "localhost:8080/seedUsers",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get all users",
+			"id": "963a4e81-064e-e151-24ee-fbb8d0794533",
+			"url": "localhost:8080/users",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Google+ id is not displayed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is not displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get single user",
+			"id": "5de4252b-a50e-51eb-4394-0d533b2a7b64",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCQw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Google+ id is not displayed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is not displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get single invalid user",
+			"id": "0b4be34c-0e8e-9fea-78f3-5b1970238c6c",
+			"url": "localhost:8080/users/asdf",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get single user (self) shows Google info",
+			"id": "f8acea90-60f2-8b0e-8fae-2a324f1d6ace",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCQw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Google+ id is displayed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get single user (someone else) doesnt shows email",
+			"id": "74402f7e-c92a-f274-57ad-a9e17d918b16",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is not displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Non-admins cannot create users",
+			"id": "650964a3-5931-fddb-b2b2-d2e74f41485f",
+			"url": "localhost:8080/users",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Trying to create a user without valid request body",
+			"id": "f3f7612a-338b-a382-527f-52070ab24348",
+			"url": "localhost:8080/users",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Creating a user",
+			"id": "8513b732-c274-0e9d-baf1-12a6bc242fa1",
+			"url": "localhost:8080/users",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isAdmin is false by default": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "User cannot edit someone else's data",
+			"id": "cdb8637e-3d47-2ac4-7295-9ebaae42c153",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCQw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Admin can edit someone else's data",
+			"id": "b27cae9c-c0f7-3f10-c987-4b7bebe0dddf",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "User properties are updated",
+			"id": "177a5a34-94a3-1f01-3673-9225e7b71686",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"isAdmin is false by default": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Values pre-user update",
+			"id": "facd854a-0925-66d7-f593-4972d1453648",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "User edits hair color",
+			"id": "44c3d10a-5da6-4e10-c49e-6ccab66ca040",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Hair color is correct",
+			"id": "5481c3e9-151b-06b5-06b6-f10c392866b8",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Hair color has changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "User edits age",
+			"id": "6da06d6f-0f1d-a6e3-74f0-7dfc43ec9ccf",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Age is correct",
+			"id": "eefc1de7-93b5-23a5-63c9-e7a5f426056e",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Age has changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "User cannot edit isAdmin property",
+			"id": "197561f3-12a7-8080-3ec4-6a5b3b639325",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "IsAdmin property did not change",
+			"id": "199bd040-e428-7bb5-0d2e-fce08454a58c",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPSuCww",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"IsAdmin has not changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Non admin cannot delete a user",
+			"id": "98945839-0f46-6346-6aa2-4352edf90efa",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Admin can delete a user",
+			"id": "4d896c75-8a8b-2007-0dc3-6296ae40e9a4",
+			"url": "localhost:8080/users/aghkZXZ-Tm9uZXIRCxIEVXNlchiAgICAgPTuCAw",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot delete a fake user ID",
+			"id": "fc20f026-6df7-c555-933a-0c111bc87eb5",
+			"url": "localhost:8080/users/asdfasdf",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Seed houses",
+			"id": "e316637e-3e72-1b79-34fa-4bbf4ebfcc06",
+			"url": "localhost:8080/seedHouses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get all houses",
+			"id": "6167a9f9-41c1-8db5-094a-156f7a0db7df",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns more than one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get all my houses",
+			"id": "872001d3-44ff-ecfc-784a-09f951b9b971",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get all my houses with invalid token",
+			"id": "2c604c8f-4679-ab28-3dbd-1e6d0846c358",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single house",
+			"id": "40fc4117-766e-1547-cf77-bbf2321ec341",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns one record": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get a single house (invalid)",
+			"id": "2e78f1bf-b845-2e6f-1181-3f863c17a130",
+			"url": "localhost:8080/houses/badId",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Tracking a house",
+			"id": "6a73b65b-c26e-6671-902e-08fe63c16deb",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns a record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tracked by is automatically set to this user": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Tracking a house that is already being tracked",
+			"id": "938abf57-cfb0-e61b-bf86-257b40a237c5",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Tracking a house with invalid token",
+			"id": "26137f5b-8782-9996-c7c1-4ef30bc17aaa",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot modify house without a token",
+			"id": "04ec58d6-0b5a-3ec3-b9a1-7d4b7325b953",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot modify house unless it is tracked by me",
+			"id": "7f0633af-f0b8-4921-3ce3-69646c53eec7",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot modify house with an invalid token",
+			"id": "673277d2-57dd-7327-e5ca-9e9400fae7a1",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Modify a house",
+			"id": "79dbafa6-3ae3-2421-4fd5-1f2b2d90410d",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "House is updated",
+			"id": "28abbf1a-2de3-1de0-7580-78e150e55f14",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Price has updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot replace a house that I am not tracking",
+			"id": "162447f7-83eb-19d4-f612-b0de2a78cee6",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot replace a house with invalid token",
+			"id": "6ec62236-de61-6273-8810-880899f833c1",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot replace a house with existing address and zip",
+			"id": "6837b37b-58eb-29bd-89b6-1195d13da60a",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Replacing a house",
+			"id": "2d82c2c5-f881-92d7-8837-212c535b7532",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns a record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id has changed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tracked by is automatically set to this user": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot un-track house without a token",
+			"id": "3d09066e-cd4c-081c-211b-462ec7f35079",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot un-track house with invalid token",
+			"id": "541556c1-a24d-dc08-20ed-b31949322f29",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot un-track house that isn't mine",
+			"id": "a56058a2-985c-ba34-33a6-e220b7889555",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07goM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Cannot un-track house with invalid house ID",
+			"id": "c22eea99-03f0-1720-2038-7bec4a2cb11d",
+			"url": "localhost:8080/houses/asdf",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Untracking a house",
+			"id": "4a947908-3b55-3d55-37bd-ff25694576f9",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID0ngoM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Admin can un-track a non-admin's tracked house",
+			"id": "c0b020d4-08be-c897-e302-e3cef1f5ac64",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID07gkM",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Track another house",
+			"id": "ddba3c68-dfd1-945d-7fcd-ee0438782ef0",
+			"url": "localhost:8080/houses",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns a record": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tracked by is automatically set to this user": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Checking forecast",
+			"id": "b096e312-0f8d-09b0-3e46-ae2384c43f27",
+			"url": "localhost:8080/houses/aghkZXZ-Tm9uZXISCxIFSG91c2UYgICAgID0ngkM/forecast",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Content-Type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returns something": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Checking forecast for invalid ID",
+			"id": "a29c0ba7-15af-212b-34f2-99d6704a7c57",
+			"url": "localhost:8080/houses/invalidId/forecast",
+			"time": "2017-06-09T22:00:21.103Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

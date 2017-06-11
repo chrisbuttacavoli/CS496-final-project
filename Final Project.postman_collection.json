@@ -1,0 +1,1731 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Final Project",
+		"_postman_id": "2c650f21-92b2-b6ea-bfaa-daa5e659305e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Seed users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns more than one record\"] = body.length > 1;",
+							"",
+							"",
+							"",
+							"postman.setEnvironmentVariable(\"adminToken\", body[0].token);",
+							"postman.setEnvironmentVariable(\"adminUserId\", body[0].id)",
+							"",
+							"postman.setEnvironmentVariable(\"nonAdminToken\", body[1].token);",
+							"postman.setEnvironmentVariable(\"nonAdminUserId\", body[1].id)"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/seedUsers",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns more than one record\"] = body.length > 1;",
+							"tests[\"Google+ id is not displayed\"] = body.gid === undefined;",
+							"tests[\"Email is not displayed\"] = body.email === undefined;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get single user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Google+ id is not displayed\"] = body.gid === undefined;",
+							"tests[\"Email is not displayed\"] = body.email === undefined;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{adminUserId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get single invalid user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 404'] = responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/asdf",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get single user (self) shows Google info",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Google+ id is displayed\"] = body.gid !== undefined;",
+							"tests[\"Email is displayed\"] = body.email !== undefined;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{adminUserId}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get single user (someone else) doesnt shows email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Email is not displayed\"] = body.email === undefined;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Non-admins cannot create users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 403'] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"gid\": \"1234\",\n\t\"age\": 22,\n\t\"hairColor\": \"green\",\n\t\"isAdmin\": false\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Trying to create a user without valid request body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 400'] = responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"age\": 22,\n\t\"hairColor\": \"green\",\n\t\"isAdmin\": false\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Creating a user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 201'] = responseCode.code === 201;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"isAdmin is false by default\"] = body.isAdmin === false;",
+							"",
+							"postman.setEnvironmentVariable(\"createdUserId\", body.id);",
+							"postman.setEnvironmentVariable(\"createdUserAge\", body.age);",
+							"postman.setEnvironmentVariable(\"createdUserHairColor\", body.hairColor);",
+							"postman.setEnvironmentVariable(\"createdUserIsAdmin\", body.isAdmin);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"age\": 22,\n\t\"gid\": \"{{$guid}}\",\n\t\"hairColor\": \"green\",\n\t\"isAdmin\": false\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User cannot edit someone else's data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{adminUserId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"hairColor\": \"purple\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin can edit someone else's data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{createdUserId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"hairColor\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User properties are updated",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);",
+							"tests[\"isAdmin is false by default\"] = body.hairColor !== environment.createdUserHairColor;",
+							"",
+							"postman.setEnvironmentVariable(\"createdUserId\", body.id);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{createdUserId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Values pre-user update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);",
+							"",
+							"postman.setEnvironmentVariable(\"nonAdminUserHairColor\", body.hairColor);",
+							"postman.setEnvironmentVariable(\"nonAdminUserIsAdmin\", body.isAdmin);",
+							"postman.setEnvironmentVariable(\"nonAdminUserAge\", body.age);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User edits hair color",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"hairColor\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Hair color is correct",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Hair color has changed\"] = body.hairColor !== environment.nonAdminUserHairColor;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User edits age",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"age\": {{$randomInt}}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Age is correct",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Age has changed\"] = body.age !== environment.nonAdminUserAge;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User cannot edit isAdmin property",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isAdmin\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "IsAdmin property did not change",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);",
+							"tests[\"IsAdmin has not changed\"] = body.isAdmin === environment.nonAdminUserIsAdmin;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{nonAdminUserId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Non admin cannot delete a user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{createdUserId}}",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin can delete a user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/{{createdUserId}}",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot delete a fake user ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 400\"] = responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/users/asdfasdf",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Seed houses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns more than one record\"] = body.length > 1;",
+							"",
+							"postman.setEnvironmentVariable(\"houseOneId\", body[0].id);",
+							"",
+							"postman.setEnvironmentVariable(\"houseTwoId\", body[1].id)"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/seedHouses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"admin\": \"{{adminUserId}}\",\n\t\"non-admin\": \"{{nonAdminUserId}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all houses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns more than one record\"] = body.length > 1;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all my houses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							"",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							"",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns one record\"] = body.length == 1;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all my houses with invalid token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 400'] = responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "badtoken",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns one record\"] = body !== null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single house (invalid)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 404'] = responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/badId",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tracking a house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns a record\"] = body !== null;",
+							"tests[\"Tracked by is automatically set to this user\"] = body.trackedBy == environment.nonAdminUserId;",
+							"",
+							"postman.setEnvironmentVariable(\"trackedAddress\", body.address);",
+							"postman.setEnvironmentVariable(\"trackedBy\", body.trackedBy);",
+							"postman.setEnvironmentVariable(\"trackedId\", body.id);",
+							"postman.setEnvironmentVariable(\"trackedPrice\", body.price);",
+							"postman.setEnvironmentVariable(\"trackedZip\", body.zip);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{$guid}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tracking a house that is already being tracked",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 400\"] = responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{trackedAddress}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{trackedZip}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tracking a house with invalid token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "invalidToken",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{$guid}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot modify house without a token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot modify house unless it is tracked by me",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"price\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot modify house with an invalid token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "badToken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Modify a house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"price\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "House is updated",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Price has updated\"] = body.price !== environment.houseOneId"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot replace a house that I am not tracking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{$guid}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot replace a house with invalid token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "invalidToken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{$guid}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot replace a house with existing address and zip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 400\"] = responseCode.code === 400;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{trackedAddress}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{trackedZip}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Replacing a house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns a record\"] = body !== null;",
+							"tests[\"Id has changed\"] = body.id !== environment.trackedId;",
+							"tests[\"Tracked by is automatically set to this user\"] = body.trackedBy == environment.adminUserId;",
+							"",
+							"postman.setEnvironmentVariable(\"trackedAddress\", body.address);",
+							"postman.setEnvironmentVariable(\"trackedBy\", body.trackedBy);",
+							"postman.setEnvironmentVariable(\"trackedId\", body.id);",
+							"postman.setEnvironmentVariable(\"trackedPrice\", body.price);",
+							"postman.setEnvironmentVariable(\"trackedZip\", body.zip);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{$guid}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"{{$guid}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot un-track house without a token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot un-track house with invalid token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "invalidToken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot un-track house that isn't mine",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 403\"] = responseCode.code === 403;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseOneId}}",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{houseTwoId}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cannot un-track house with invalid house ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 404\"] = responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/asdf",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{houseTwoId}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Untracking a house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{trackedId}}",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin can un-track a non-admin's tracked house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 204\"] = responseCode.code === 204;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{houseTwoId}}",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{adminToken}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Track another house",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 201\"] = responseCode.code === 201;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns a record\"] = body !== null;",
+							"tests[\"Tracked by is automatically set to this user\"] = body.trackedBy == environment.nonAdminUserId;",
+							"",
+							"postman.setEnvironmentVariable(\"trackedAddress\", body.address);",
+							"postman.setEnvironmentVariable(\"trackedBy\", body.trackedBy);",
+							"postman.setEnvironmentVariable(\"trackedId\", body.id);",
+							"postman.setEnvironmentVariable(\"trackedPrice\", body.price);",
+							"postman.setEnvironmentVariable(\"trackedZip\", body.zip);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{nonAdminToken}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"{{$guid}}\",\n\t\"price\": \"{{$guid}}\",\n\t\"zip\": \"97070\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Checking forecast",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 200'] = responseCode.code === 200;",
+							"",
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"content-type\");",
+							" ",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+							" ",
+							"if (contentTypeHeaderExists) {",
+							"    tests[\"Content-Type is application/json\"] = ",
+							"      responseHeaders[\"content-type\"].has(\"application/json\");",
+							"}",
+							"",
+							"var body = JSON.parse(responseBody);",
+							"tests[\"Returns something\"] = body !== null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/{{trackedId}}/forecast",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Checking forecast for invalid ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests['Status code is 404'] = responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/houses/invalidId/forecast",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
